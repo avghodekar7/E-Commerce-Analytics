@@ -11,7 +11,7 @@ st.set_page_config(
     page_title="E-Commerce Analytics",
     page_icon="🛍️",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
 # ============================================================
@@ -132,9 +132,9 @@ if "selected_countries" not in st.session_state:
 st.markdown("""
 <style>
 
-/* Hide Streamlit's default top header */
+/* Keep Streamlit header so the sidebar menu button remains visible */
 [data-testid="stHeader"] {
-    display: none;
+    background: transparent;
 }
 
 /* Remove the extra top spacing left by the header */
